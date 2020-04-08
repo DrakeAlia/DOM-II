@@ -66,12 +66,7 @@ nav.addEventListener('mouseup', function() {
 // click to update nav links based on active pages + event propagation //
 for (const navLink of navLinks) {
     navLink.addEventListener('click', (event) => {
-
-        for (const navLink of navLinks) {
-            navLink.classList.remove('activePage', 'navLinkHover');
-        }
-        event.target.classList.add('activePage');
-        event.stopPropagation()
-        event.preventDefault();
+    event.stopPropagation()
+    event.preventDefault();
     });
 };
