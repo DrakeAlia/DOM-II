@@ -11,7 +11,7 @@ footerText.addEventListener('mouseenter', function() {
     footerText.style.color = 'crimson';
 });
 
-// 2. mouseleave Change the color to grey on mouse leave //
+// 2. mouseleave change the color to grey on mouse leave //
 const footer = document.querySelector('.footer');
 footer.addEventListener('mouseleave', function(){
     footer.style.background = 'grey';
@@ -63,7 +63,7 @@ nav.addEventListener('mouseup', function() {
 
 // 10. stop navigation items from refreshing the page //
 // mouseover to update nav links styles //
-// click to update nav links based on active pages + event propagation //
+// click to update event propagation //
 for (const navLink of navLinks) {
     navLink.addEventListener('click', (event) => {
     event.stopPropagation()
